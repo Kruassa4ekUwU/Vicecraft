@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "vicecraft:moonshine" },
+    { "item": "minecraft:glass_bottle" }
+  ],
+  "result": { "id": "vicecraft:chekushka", "count": 1 }
+}
