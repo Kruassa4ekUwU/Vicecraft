@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": { "item": "vicecraft:hemp_fiber" },
+  "result": { "id": "vicecraft:dried_hemp_fiber" },
+  "experience": 0.1,
+  "cookingtime": 200
+}
