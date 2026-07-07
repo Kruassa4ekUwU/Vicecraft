@@ -1,0 +1,44 @@
+{
+  "itemGroup.vicecraft": "ViceCraft",
+
+  "item.vicecraft.tobacco_leaf": "Лист табака",
+  "item.vicecraft.dried_tobacco": "Сушёный табак",
+  "item.vicecraft.cigarette": "Сигарета",
+  "item.vicecraft.cigar": "Сигара",
+
+  "item.vicecraft.hops": "Хмель",
+  "item.vicecraft.beer": "Пиво",
+  "item.vicecraft.wine": "Вино",
+  "item.vicecraft.kvass": "Квас",
+  "item.vicecraft.medovukha": "Медовуха",
+  "item.vicecraft.chekushka": "Чекушка",
+  "item.vicecraft.moonshine": "Самогон",
+  "item.vicecraft.pure_spirit": "Чистый спирт (96%)",
+
+  "item.vicecraft.vape": "Вейп",
+  "item.vicecraft.hookah": "Кальян",
+  "item.vicecraft.snus": "Снюс",
+  "item.vicecraft.nicotine_patch": "Никотиновый пластырь",
+
+  "item.vicecraft.coffee_beans": "Кофейные зёрна",
+  "item.vicecraft.roasted_coffee": "Жареный кофе",
+  "item.vicecraft.coffee_cup": "Чашка кофе",
+  "item.vicecraft.energy_drink": "Энергетик",
+
+  "item.vicecraft.tea_leaf": "Чайный лист",
+  "item.vicecraft.tea": "Чай",
+  "item.vicecraft.mate": "Матэ",
+  "item.vicecraft.kombucha": "Комбуча",
+  "item.vicecraft.chifir": "Чифирь",
+
+  "block.vicecraft.tobacco_crop": "Куст табака",
+  "block.vicecraft.hops_crop": "Куст хмеля",
+  "block.vicecraft.coffee_crop": "Кофейный куст",
+  "block.vicecraft.tea_crop": "Чайный куст",
+
+  "effect.vicecraft.nicotine_rush": "Никотиновый прилив",
+  "effect.vicecraft.tipsy": "Лёгкое опьянение",
+  "effect.vicecraft.drunk": "Опьянение",
+  "effect.vicecraft.caffeine_boost": "Прилив кофеина",
+  "effect.vicecraft.overcaffeinated": "Перебор кофеина"
+}
