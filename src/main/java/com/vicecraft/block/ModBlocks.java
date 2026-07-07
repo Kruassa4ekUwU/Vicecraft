@@ -20,6 +20,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HOPS_CROP = registerCrop("hops_crop");
     public static final DeferredBlock<Block> COFFEE_CROP = registerCrop("coffee_crop");
     public static final DeferredBlock<Block> TEA_CROP = registerCrop("tea_crop");
+    public static final DeferredBlock<Block> HEMP_CROP = registerCrop("hemp_crop");
 
     private static DeferredBlock<Block> registerCrop(String name) {
         return BLOCKS.register(name, () -> new CropBlock(
