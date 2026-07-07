@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:bread" },
+    { "item": "minecraft:potion" }
+  ],
+  "result": { "id": "vicecraft:kvass", "count": 1 }
+}
