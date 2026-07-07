@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "vicecraft:roasted_coffee" },
+    { "item": "minecraft:potion" }
+  ],
+  "result": { "id": "vicecraft:coffee_cup", "count": 1 }
+}
