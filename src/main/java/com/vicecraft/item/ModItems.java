@@ -206,8 +206,15 @@ public class ModItems {
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.HUNGER, 600, 0), 0.5f)
                             .build()
             )));
-
-    public static void register(IEventBus eventBus) {
+public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    // ---------- Конопля (техническое сырьё, без эффектов) ----------
+    public static final DeferredItem<Item> HEMP_FIBER = ITEMS.register("hemp_fiber",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DRIED_HEMP_FIBER = ITEMS.register("dried_hemp_fiber",
+            () -> new Item(new Item.Properties()));
 }
+ 
