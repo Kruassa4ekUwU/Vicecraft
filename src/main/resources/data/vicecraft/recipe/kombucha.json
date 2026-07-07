@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "vicecraft:tea" },
+    { "item": "minecraft:sugar" }
+  ],
+  "result": { "id": "vicecraft:kombucha", "count": 1 }
+}
