@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "vicecraft:dried_tobacco" },
+    { "item": "minecraft:paper" }
+  ],
+  "result": { "id": "vicecraft:cigarette", "count": 1 }
+}
