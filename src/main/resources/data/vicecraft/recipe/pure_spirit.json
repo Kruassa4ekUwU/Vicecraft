@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "vicecraft:moonshine" },
+    { "item": "vicecraft:moonshine" }
+  ],
+  "result": { "id": "vicecraft:pure_spirit", "count": 1 }
+}
