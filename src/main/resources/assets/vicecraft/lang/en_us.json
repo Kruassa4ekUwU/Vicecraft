@@ -1,0 +1,44 @@
+{
+  "itemGroup.vicecraft": "ViceCraft",
+
+  "item.vicecraft.tobacco_leaf": "Tobacco Leaf",
+  "item.vicecraft.dried_tobacco": "Dried Tobacco",
+  "item.vicecraft.cigarette": "Cigarette",
+  "item.vicecraft.cigar": "Cigar",
+
+  "item.vicecraft.hops": "Hops",
+  "item.vicecraft.beer": "Beer",
+  "item.vicecraft.wine": "Wine",
+  "item.vicecraft.kvass": "Kvass",
+  "item.vicecraft.medovukha": "Medovukha",
+  "item.vicecraft.chekushka": "Chekushka (Vodka)",
+  "item.vicecraft.moonshine": "Moonshine",
+  "item.vicecraft.pure_spirit": "Pure Spirit (96%)",
+
+  "item.vicecraft.vape": "Vape",
+  "item.vicecraft.hookah": "Hookah",
+  "item.vicecraft.snus": "Snus",
+  "item.vicecraft.nicotine_patch": "Nicotine Patch",
+
+  "item.vicecraft.coffee_beans": "Coffee Beans",
+  "item.vicecraft.roasted_coffee": "Roasted Coffee",
+  "item.vicecraft.coffee_cup": "Cup of Coffee",
+  "item.vicecraft.energy_drink": "Energy Drink",
+
+  "item.vicecraft.tea_leaf": "Tea Leaf",
+  "item.vicecraft.tea": "Tea",
+  "item.vicecraft.mate": "Mate",
+  "item.vicecraft.kombucha": "Kombucha",
+  "item.vicecraft.chifir": "Chifir",
+
+  "block.vicecraft.tobacco_crop": "Tobacco Plant",
+  "block.vicecraft.hops_crop": "Hops Plant",
+  "block.vicecraft.coffee_crop": "Coffee Plant",
+  "block.vicecraft.tea_crop": "Tea Plant",
+
+  "effect.vicecraft.nicotine_rush": "Nicotine Rush",
+  "effect.vicecraft.tipsy": "Tipsy",
+  "effect.vicecraft.drunk": "Drunk",
+  "effect.vicecraft.caffeine_boost": "Caffeine Boost",
+  "effect.vicecraft.overcaffeinated": "Overcaffeinated"
+}
