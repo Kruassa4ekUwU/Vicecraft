@@ -1,0 +1,11 @@
+{
+  "type": "farmersdelight:cooking",
+  "ingredients": [
+    { "item": "vicecraft:roasted_coffee" },
+    { "item": "minecraft:potion" }
+  ],
+  "result": { "item": "vicecraft:coffee_cup", "count": 1 },
+  "cookingTime": 100,
+  "experience": 0.2,
+  "container": "minecraft:bowl"
+}
