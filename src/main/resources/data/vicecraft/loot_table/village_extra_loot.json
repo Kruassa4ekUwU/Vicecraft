@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "vicecraft:tobacco_seeds", "weight": 3 },
+        { "type": "minecraft:item", "name": "vicecraft:hops_seeds", "weight": 3 },
+        { "type": "minecraft:item", "name": "vicecraft:coffee_seeds", "weight": 2 },
+        { "type": "minecraft:item", "name": "vicecraft:tea_seeds", "weight": 3 },
+        { "type": "minecraft:item", "name": "vicecraft:hemp_seeds", "weight": 2 },
+        { "type": "minecraft:item", "name": "vicecraft:tea", "weight": 2 },
+        { "type": "minecraft:item", "name": "vicecraft:coffee_cup", "weight": 2 },
+        { "type": "minecraft:item", "name": "vicecraft:kvass", "weight": 2 }
+      ]
+    }
+  ]
+}
