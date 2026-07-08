@@ -1,0 +1,12 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "minecraft:wheat" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:potion" }
+  ],
+  "results": [
+    { "item": "vicecraft:moonshine" }
+  ],
+  "heat_requirement": "heated"
+}
