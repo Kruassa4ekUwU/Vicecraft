@@ -144,7 +144,7 @@ public class ModItems {
 
     // ---------- Кофе / энергетик ----------
     public static final DeferredItem<Item> COFFEE_BEANS = ITEMS.register("coffee_beans",
-            () -> new Item(new Item.Properties()));
+            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.COFFEE_BUSH.get(), new Item.Properties()));
 
     public static final DeferredItem<Item> ROASTED_COFFEE = ITEMS.register("roasted_coffee",
             () -> new Item(new Item.Properties()));
@@ -222,9 +222,6 @@ public static void register(IEventBus eventBus) {
 
     public static final DeferredItem<net.minecraft.world.item.Item> HOPS_SEEDS = ITEMS.register("hops_seeds",
             () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.HOPS_BUSH.get(), new Item.Properties()));
-
-    public static final DeferredItem<net.minecraft.world.item.Item> COFFEE_SEEDS = ITEMS.register("coffee_seeds",
-            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.COFFEE_BUSH.get(), new Item.Properties()));
 
     public static final DeferredItem<net.minecraft.world.item.Item> TEA_SEEDS = ITEMS.register("tea_seeds",
             () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.TEA_BUSH.get(), new Item.Properties()));
