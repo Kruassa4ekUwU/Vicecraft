@@ -6,7 +6,7 @@
       "entries": [
         { "type": "minecraft:item", "name": "vicecraft:tobacco_seeds", "weight": 3 },
         { "type": "minecraft:item", "name": "vicecraft:hops_seeds", "weight": 3 },
-        { "type": "minecraft:item", "name": "vicecraft:coffee_seeds", "weight": 2 },
+        { "type": "minecraft:item", "name": "vicecraft:coffee_beans", "weight": 2 },
         { "type": "minecraft:item", "name": "vicecraft:tea_seeds", "weight": 3 },
         { "type": "minecraft:item", "name": "vicecraft:hemp_seeds", "weight": 2 },
         { "type": "minecraft:item", "name": "vicecraft:tea", "weight": 2 },
