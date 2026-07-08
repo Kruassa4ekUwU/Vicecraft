@@ -48,11 +48,11 @@ public class HypodynamiaHandler {
                 if (recovery <= 0) {
                     CURRENT_AMPLIFIER.put(id, 0);
                     RECOVERY_TICKS.remove(id);
-                    player.removeEffect(MobEffects.SLOWNESS);
+                    player.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);
                     player.removeEffect(MobEffects.WEAKNESS);
                 } else {
                     // Держим текущий уровень дебаффа, пока не закончится минута движения
-                    player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 60, amplifier, false, true, true));
+                    player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, amplifier, false, true, true));
                     player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, Math.min(amplifier, 1), false, true, true));
                 }
             }
@@ -68,7 +68,7 @@ public class HypodynamiaHandler {
             int extraMinutes = (ticks - STILL_THRESHOLD) / STACK_INTERVAL;
             int newAmplifier = Math.min(extraMinutes, MAX_AMPLIFIER);
             CURRENT_AMPLIFIER.put(id, newAmplifier);
-            player.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 60, newAmplifier, false, true, true));
+            player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, newAmplifier, false, true, true));
             player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, Math.min(newAmplifier, 1), false, true, true));
         }
     }
