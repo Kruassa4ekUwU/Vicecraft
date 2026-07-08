@@ -1,0 +1,13 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "minecraft:wheat" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:potion" }
+  ],
+  "results": [
+    { "item": "vicecraft:tequila" }
+  ],
+  "heat_requirement": "heated"
+}
