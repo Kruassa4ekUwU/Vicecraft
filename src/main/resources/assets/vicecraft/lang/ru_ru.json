@@ -41,4 +41,10 @@
   "effect.vicecraft.drunk": "Опьянение",
   "effect.vicecraft.caffeine_boost": "Прилив кофеина",
   "effect.vicecraft.overcaffeinated": "Перебор кофеина"
+
+  "item.vicecraft.tobacco_seeds": "Семена табака",
+  "item.vicecraft.hops_seeds": "Семена хмеля",
+  "item.vicecraft.coffee_seeds": "Семена кофе",
+  "item.vicecraft.tea_seeds": "Семена чая",
+  "item.vicecraft.hemp_seeds": "Семена конопли",
 }
