@@ -1,0 +1,11 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    { "item": "vicecraft:dried_tobacco" }
+  ],
+  "result": [
+    { "item": "vicecraft:cigarette", "count": 2 }
+  ],
+  "tool": "farmersdelight:is_knife",
+  "sound": "minecraft:item.crop_placed"
+}
