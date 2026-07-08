@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "vicecraft:block/tobacco_bush" },
+    "age=1": { "model": "vicecraft:block/tobacco_bush" },
+    "age=2": { "model": "vicecraft:block/tobacco_bush" },
+    "age=3": { "model": "vicecraft:block/tobacco_bush" }
+  }
+}
