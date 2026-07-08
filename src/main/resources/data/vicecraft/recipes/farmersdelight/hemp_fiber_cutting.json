@@ -1,0 +1,11 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    { "item": "vicecraft:hemp_fiber" }
+  ],
+  "result": [
+    { "item": "vicecraft:dried_hemp_fiber", "count": 1 }
+  ],
+  "tool": "farmersdelight:is_knife",
+  "sound": "minecraft:item.crop_placed"
+}
