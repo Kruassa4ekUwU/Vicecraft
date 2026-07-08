@@ -1,0 +1,12 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "vicecraft:roasted_coffee" },
+    { "item": "minecraft:sugar" },
+    { "item": "minecraft:potion" }
+  ],
+  "results": [
+    { "item": "vicecraft:energy_drink" }
+  ],
+  "heat_requirement": "heated"
+}
