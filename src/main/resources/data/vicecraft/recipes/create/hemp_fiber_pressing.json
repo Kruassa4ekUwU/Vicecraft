@@ -1,0 +1,9 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    { "item": "vicecraft:dried_hemp_fiber" }
+  ],
+  "results": [
+    { "item": "minecraft:string", "count": 2 }
+  ]
+}
