@@ -15,10 +15,13 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 repositories {
-    maven { url = 'https://maven.parchmentmc.org/' }
-    maven { url = 'https://maven.tterrag.com/' }
-    maven { url = 'https://api.modrinth.com/maven' }
+    maven { url = 'https://maven.createmod.net' }
     maven { url = 'https://cursemaven.com' }
+}
+
+dependencies {
+    implementation "com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim"
+    implementation "curse.maven:farmers-delight-${farmers_delight_curse_id}:${farmers_delight_curse_file}"
 }
 
 neoForge {
@@ -49,10 +52,6 @@ neoForge {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
-dependencies {
-    implementation "com.simibubi.create:create-neoforge-${create_minecraft_version}:${create_version}:slim"
-    implementation "maven.modrinth:farmers-delight:${farmers_delight_version}"
-}
 
 tasks.named('processResources').configure {
     var replaceProperties = [
