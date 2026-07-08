@@ -1,6 +1,7 @@
 package com.vicecraft;
 
 import com.vicecraft.item.ModItems;
+import com.vicecraft.item.ModCreativeTabs;
 import com.vicecraft.block.ModBlocks;
 import com.vicecraft.effect.ModEffects;
 import net.neoforged.bus.api.IEventBus;
@@ -15,6 +16,7 @@ public class VicecraftMod {
     public VicecraftMod(IEventBus modEventBus, ModContainer modContainer) {
         ModEffects.register(modEventBus);
         ModItems.register(modEventBus);
+        ModCreativeTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
