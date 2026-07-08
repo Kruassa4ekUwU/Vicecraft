@@ -1,0 +1,12 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "vicecraft:hops" },
+    { "item": "minecraft:wheat" },
+    { "item": "minecraft:potion" }
+  ],
+  "results": [
+    { "item": "vicecraft:beer" }
+  ],
+  "heat_requirement": "heated"
+}
