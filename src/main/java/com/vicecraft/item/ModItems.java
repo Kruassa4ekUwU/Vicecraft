@@ -216,20 +216,20 @@ public static void register(IEventBus eventBus) {
 
     public static final DeferredItem<Item> DRIED_HEMP_FIBER = ITEMS.register("dried_hemp_fiber",
             () -> new Item(new Item.Properties()));
-    // ---------- Семена для посадки/генерации ----------
+    // ---------- Семена — сажаются как дикие кусты, не требуют грядки ----------
     public static final DeferredItem<net.minecraft.world.item.Item> TOBACCO_SEEDS = ITEMS.register("tobacco_seeds",
-            () -> new net.minecraft.world.item.ItemNameBlockItem(com.vicecraft.block.ModBlocks.TOBACCO_CROP.get(), new Item.Properties()));
+            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.TOBACCO_BUSH.get(), new Item.Properties()));
 
     public static final DeferredItem<net.minecraft.world.item.Item> HOPS_SEEDS = ITEMS.register("hops_seeds",
-            () -> new net.minecraft.world.item.ItemNameBlockItem(com.vicecraft.block.ModBlocks.HOPS_CROP.get(), new Item.Properties()));
+            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.HOPS_BUSH.get(), new Item.Properties()));
 
     public static final DeferredItem<net.minecraft.world.item.Item> COFFEE_SEEDS = ITEMS.register("coffee_seeds",
-            () -> new net.minecraft.world.item.ItemNameBlockItem(com.vicecraft.block.ModBlocks.COFFEE_CROP.get(), new Item.Properties()));
+            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.COFFEE_BUSH.get(), new Item.Properties()));
 
     public static final DeferredItem<net.minecraft.world.item.Item> TEA_SEEDS = ITEMS.register("tea_seeds",
-            () -> new net.minecraft.world.item.ItemNameBlockItem(com.vicecraft.block.ModBlocks.TEA_CROP.get(), new Item.Properties()));
+            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.TEA_BUSH.get(), new Item.Properties()));
 
     public static final DeferredItem<net.minecraft.world.item.Item> HEMP_SEEDS = ITEMS.register("hemp_seeds",
-            () -> new net.minecraft.world.item.ItemNameBlockItem(com.vicecraft.block.ModBlocks.HEMP_CROP.get(), new Item.Properties()));
+            () -> new net.minecraft.world.item.BlockItem(com.vicecraft.block.ModBlocks.HEMP_BUSH.get(), new Item.Properties()));
 }
  
