@@ -21,6 +21,17 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COFFEE_CROP = registerCrop("coffee_crop");
     public static final DeferredBlock<Block> TEA_CROP = registerCrop("tea_crop");
     public static final DeferredBlock<Block> HEMP_CROP = registerCrop("hemp_crop");
+    // Дикие кусты — растут сами по себе, не требуют грядки
+    public static final DeferredBlock<Block> TOBACCO_BUSH = BLOCKS.register("tobacco_bush",
+            () -> new ModBushBlock(com.vicecraft.item.ModItems.TOBACCO_LEAF));
+    public static final DeferredBlock<Block> HOPS_BUSH = BLOCKS.register("hops_bush",
+            () -> new ModBushBlock(com.vicecraft.item.ModItems.HOPS));
+    public static final DeferredBlock<Block> COFFEE_BUSH = BLOCKS.register("coffee_bush",
+            () -> new ModBushBlock(com.vicecraft.item.ModItems.COFFEE_BEANS));
+    public static final DeferredBlock<Block> TEA_BUSH = BLOCKS.register("tea_bush",
+            () -> new ModBushBlock(com.vicecraft.item.ModItems.TEA_LEAF));
+    public static final DeferredBlock<Block> HEMP_BUSH = BLOCKS.register("hemp_bush",
+            () -> new ModBushBlock(com.vicecraft.item.ModItems.HEMP_FIBER));
 
     private static DeferredBlock<Block> registerCrop(String name) {
         return BLOCKS.register(name, () -> new CropBlock(
