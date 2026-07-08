@@ -1,28 +1,25 @@
 package com.vicecraft.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.tags.BlockTags;
 
@@ -31,6 +28,9 @@ import java.util.function.Supplier;
 public class ModBushBlock extends BushBlock {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
     private final Supplier<Item> harvestItem;
+
+    private static final MapCodec<ModBushBlock> CODEC =
+            MapCodec.unit(() -> new ModBushBlock(() -> Items.AIR));
 
     public ModBushBlock(Supplier<Item> harvestItem) {
         super(BlockBehaviour.Properties.of()
@@ -42,6 +42,11 @@ public class ModBushBlock extends BushBlock {
                 .pushReaction(net.minecraft.world.level.material.PushReaction.DESTROY));
         this.harvestItem = harvestItem;
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, 0));
+    }
+
+    @Override
+    protected MapCodec<? extends BushBlock> codec() {
+        return CODEC;
     }
 
     @Override
@@ -63,14 +68,14 @@ public class ModBushBlock extends BushBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         int age = state.getValue(AGE);
         if (age >= 2) {
             int count = age == 3 ? 2 : 1;
             popResource(level, pos, new ItemStack(harvestItem.get(), count));
             level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0f, 0.8f + level.random.nextFloat() * 0.4f);
             level.setBlock(pos, state.setValue(AGE, 1), 2);
-            return InteractionResult.sidedSuccess(level.isClientSide);
+            return InteractionResult.SUCCESS;
         }
         return InteractionResult.PASS;
     }
