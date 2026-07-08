@@ -25,7 +25,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH.get(), 1200, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH, 1200, 0), 1.0f)
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.HUNGER, 400, 0), 0.3f)
                             .build()
             )));
@@ -34,7 +34,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH.get(), 2400, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH, 2400, 1), 1.0f)
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.HUNGER, 600, 0), 0.5f)
                             .build()
             )));
@@ -44,7 +44,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH.get(), 1000, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH, 1000, 0), 1.0f)
                             .build()
             )));
 
@@ -52,7 +52,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH.get(), 1800, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH, 1800, 0), 1.0f)
                             .build()
             )));
 
@@ -61,7 +61,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH.get(), 600, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH, 600, 0), 1.0f)
                             .build()
             )));
 
@@ -70,7 +70,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH.get(), 6000, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.NICOTINE_RUSH, 6000, 0), 1.0f)
                             .build()
             )));
 
@@ -82,7 +82,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(1).saturationModifier(0.2f)
-                            .effect(() -> new MobEffectInstance(ModEffects.TIPSY.get(), 1200, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.TIPSY, 1200, 0), 1.0f)
                             .build()
             )));
 
@@ -90,7 +90,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(1).saturationModifier(0.2f)
-                            .effect(() -> new MobEffectInstance(ModEffects.TIPSY.get(), 1600, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.TIPSY, 1600, 1), 1.0f)
                             .build()
             )));
 
@@ -107,7 +107,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(1).saturationModifier(0.3f)
-                            .effect(() -> new MobEffectInstance(ModEffects.TIPSY.get(), 1600, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.TIPSY, 1600, 1), 1.0f)
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.REGENERATION, 100, 0), 0.3f)
                             .build()
             )));
@@ -117,8 +117,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.DRUNK.get(), 1800, 1), 1.0f)
-                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.NAUSEA, 600, 0), 0.6f)
+                            .effect(() -> new MobEffectInstance(ModEffects.DRUNK, 1800, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.CONFUSION, 600, 0), 0.6f)
                             .build()
             )));
 
@@ -126,8 +126,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.DRUNK.get(), 2400, 2), 1.0f)
-                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.NAUSEA, 800, 1), 0.7f)
+                            .effect(() -> new MobEffectInstance(ModEffects.DRUNK, 2400, 2), 1.0f)
+                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.CONFUSION, 800, 1), 0.7f)
                             .build()
             )));
 
@@ -136,8 +136,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.DRUNK.get(), 3600, 3), 1.0f)
-                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.NAUSEA, 1200, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.DRUNK, 3600, 3), 1.0f)
+                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.CONFUSION, 1200, 1), 1.0f)
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.BLINDNESS, 200, 0), 0.5f)
                             .build()
             )));
@@ -153,7 +153,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(1).saturationModifier(0.3f)
-                            .effect(() -> new MobEffectInstance(ModEffects.CAFFEINE_BOOST.get(), 1200, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.CAFFEINE_BOOST, 1200, 0), 1.0f)
                             .build()
             )));
 
@@ -161,7 +161,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(1).saturationModifier(0.1f)
-                            .effect(() -> new MobEffectInstance(ModEffects.CAFFEINE_BOOST.get(), 1800, 1), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.CAFFEINE_BOOST, 1800, 1), 1.0f)
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.HUNGER, 400, 0), 0.4f)
                             .build()
             )));
@@ -183,7 +183,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(1).saturationModifier(0.3f)
-                            .effect(() -> new MobEffectInstance(ModEffects.CAFFEINE_BOOST.get(), 900, 0), 1.0f)
+                            .effect(() -> new MobEffectInstance(ModEffects.CAFFEINE_BOOST, 900, 0), 1.0f)
                             .build()
             )));
 
@@ -201,8 +201,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(
                     new FoodProperties.Builder()
                             .nutrition(0).saturationModifier(0f)
-                            .effect(() -> new MobEffectInstance(ModEffects.OVERCAFFEINATED.get(), 1200, 2), 1.0f)
-                            .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.NAUSEA, 600, 1), 0.6f)
+                            .effect(() -> new MobEffectInstance(ModEffects.OVERCAFFEINATED, 1200, 2), 1.0f)
+                           .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.CONFUSION, 600, 1), 0.6f)
                             .effect(() -> new MobEffectInstance(net.minecraft.world.effect.MobEffects.HUNGER, 600, 0), 0.5f)
                             .build()
             )));
