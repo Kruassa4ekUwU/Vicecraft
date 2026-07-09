@@ -1,0 +1,10 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "vicecraft:tobacco_leaf" }
+  ],
+  "results": [
+    { "item": "vicecraft:dried_tobacco" }
+  ],
+  "heat_requirement": "heated"
+}
