@@ -20,7 +20,6 @@ public class VicecraftMod {
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-        NeoForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event) {
