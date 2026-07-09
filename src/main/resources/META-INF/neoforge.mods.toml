@@ -4,7 +4,7 @@ license = "MIT"
 
 [[mods]]
 modId = "vicecraft"
-version = "1.0.0"
+version = "1.1.0"
 displayName = "ViceCraft"
 authors = "YourName"
 description = '''Табак, алкоголь и кофе с интеграцией Create и Farmer's Delight.'''
@@ -33,6 +33,6 @@ description = '''Табак, алкоголь и кофе с интеграци�
 [[dependencies.vicecraft]]
     modId = "farmersdelight"
     type = "required"
-    versionRange = "[2.0.0,)"
+    versionRange = "[1.0.0,)"
     ordering = "AFTER"
     side = "BOTH"
