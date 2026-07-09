@@ -46,4 +46,10 @@
   "item.vicecraft.hops_seeds": "Семена хмеля",
   "item.vicecraft.tea_seeds": "Семена чая",
   "item.vicecraft.hemp_seeds": "Семена конопли",
+
+  "block.vicecraft.tobacco_bush": "Дикий куст табака",
+  "block.vicecraft.hops_bush": "Дикий куст хмеля",
+  "block.vicecraft.coffee_bush": "Дикий кофейный куст",
+  "block.vicecraft.tea_bush": "Дикий чайный куст",
+  "block.vicecraft.hemp_bush": "Дикий куст конопли",
 }
