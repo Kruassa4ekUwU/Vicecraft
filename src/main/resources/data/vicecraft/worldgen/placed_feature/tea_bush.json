@@ -1,9 +1,18 @@
+
 {
   "feature": "vicecraft:tea_bush",
   "placement": [
-    { "type": "minecraft:count", "count": 2 },
+    { "type": "minecraft:rarity_filter", "chance": 6 },
     { "type": "minecraft:in_square" },
     { "type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE_WG" },
-    { "type": "minecraft:biome" }
+    { "type": "minecraft:biome" },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air",
+        "offset": [0, 0, 0]
+      }
+    }
   ]
 }
