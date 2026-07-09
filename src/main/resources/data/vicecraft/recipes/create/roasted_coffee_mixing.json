@@ -1,0 +1,10 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "vicecraft:coffee_beans" }
+  ],
+  "results": [
+    { "item": "vicecraft:roasted_coffee" }
+  ],
+  "heat_requirement": "heated"
+}
