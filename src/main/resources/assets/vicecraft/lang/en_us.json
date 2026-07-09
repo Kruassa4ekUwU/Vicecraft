@@ -46,4 +46,10 @@
   "item.vicecraft.hops_seeds": "Hops Seeds",
   "item.vicecraft.tea_seeds": "Tea Seeds",
   "item.vicecraft.hemp_seeds": "Hemp Seeds",
+
+  "block.vicecraft.tobacco_bush": "Wild Tobacco Bush",
+  "block.vicecraft.hops_bush": "Wild Hops Bush",
+  "block.vicecraft.coffee_bush": "Wild Coffee Bush",
+  "block.vicecraft.tea_bush": "Wild Tea Bush",
+  "block.vicecraft.hemp_bush": "Wild Hemp Bush",
 }
